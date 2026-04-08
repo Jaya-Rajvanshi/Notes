@@ -376,6 +376,7 @@ Now, suppose we have more than value associated with our key. Let this be repres
 | 2.   | Hermione | Gryffindor | Otter                |
 | 3.   | Ron      | Gryffindor | Jack Russell Terrier |
 | 4.   | Draco    | Slytherin  |                      |
+
 For this, we will use multiple dictionaries within same students list.
 
 ```
