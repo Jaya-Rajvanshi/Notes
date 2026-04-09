@@ -251,4 +251,45 @@ print(f"Hello, {name}")
 What is your name? Malan, David
 Hello, David Malan
 ```
-Suppose someone forgets to provide space after the comma, then ValueError is displayed. This implies that our code is fragile and does not handle exceptions. 
+Suppose someone forgets to provide space after the comma, then ValueError is displayed. This implies that our code is fragile and does not handle exceptions. For this, we can use regular expressions.
+
+```
+import re
+name = input("What is your name? ").strip()
+matches =  re.search(r"^(.+) ,(.+)$, name)
+if matches:
+    last, first = matches.groups()
+    name = f"{first} {last}"
+print(f"Hello, {name}")
+```
+By now, we have validated user's input and also we have checked user's input against a pattern that we require the users to follow. Now, we will write a program that will go to a user's twitter profile and extract their username from it.
+There is another function in Python called replace() which as the name suggests replaces the first argument with the second one.
+
+```
+url = input("URL: ").strip()
+username = url.replace("https://twitter.com/", "")
+print(f"Username: {username}")
+```
+
+```
+python twitter.py
+URL: https://twitter.com/davidjmalan
+Username: davidjmalan
+```
+But this program logic is fragile. Suppose user does not provide https url but rather only http - less secure but we should be able to handle it programmatically. Also what if user provided only " twitter.com/davidjmalan " then also the program may break. There are many other similar scenarios and our program should be able to handle them.
+
+```
+URL: My username is https://twitter.com/davidjmalan
+Username: My username is davidjmalan
+```
+There is another function inside the re library that is re.sub(). Its syntax is
+
+```
+re.sub(pattern, repl, string, count=0, flags=0)
+```
+
+```
+import re
+url = input("URL: ").strip()
+username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+print(f"Username: {username}") 
