@@ -9,6 +9,8 @@ notes/
 │
 ├── Python CS50/
 └── Command Line/
+└── Full Stack/
+
 ```
 
 ---
