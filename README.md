@@ -30,7 +30,7 @@ This folder contains my Python notes created while learning from:
 
 These notes are written in a simple and beginner-friendly way to help reinforce concepts and make revision easier.
 
----
+
 
 ## 💻 Command Line
 
@@ -47,7 +47,7 @@ This folder contains notes on using the command line efficiently, created using:
 * Working with directories and files
 * Useful real-world CLI workflows
 
----
+
 
 ## 🎯 Purpose of This Repository
 
@@ -55,7 +55,7 @@ This folder contains notes on using the command line efficiently, created using:
 * To build strong fundamentals
 * To create a quick revision resource
 
----
+
 
 ## 🚀 How to Use
 
@@ -63,7 +63,7 @@ This folder contains notes on using the command line efficiently, created using:
 * Go through the notes step-by-step
 * Practice alongside for better understanding
 
----
+
 
 ## 🤝 Contributions
 
