@@ -3,13 +3,16 @@ Core Concepts
 - Selectors
 - Specificity
 - Box model
- Layout Systems
+
+Layout Systems
 - display types
 - flexbox
 - grid
+
 Responsive Design
 - media queries
 - units (%, rem, vw)
+
 Advanced
 - positioning
 - z-index
