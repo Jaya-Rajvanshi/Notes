@@ -174,3 +174,37 @@ border-color: red;                /Sets the border color.
 border: <width> <style> <color>;  /Shorthand for the above 3 properties.
 border: 1px solid red; 
 ```
+
+## Text Styles
+
+```
+.title { 
+font-family: Arial;                     /Change the font.
+font-family: Roboto, Verdana, Arial;    /A font-stack: if Roboto is not available, it will fall back to Verdana. If Verdana is not available it will fall back to                                          /Arial.
+font-size: 30px;                     /Change text size.
+font-weight: bold;                   /Change text thickness
+font-weight: 700;                    /Another way to specify font-weight. We can use: 100, 200, 300, ..., 900. bold = 700, regular = 400, semibold =500
+font-style: italic;                  
+text-align: center;                  /Other values we can use: left, right, justified
+line-height: 24px;                   /Adjust space between lines of text.
+text-decoration: underline;          /Underlines the text.
+text-decoration: none;               /Removes underline.
+
+```
+
+< p > by default have margin-top and margin-bottom. A common practice is to:
+1. Reset the default margins
+   
+```
+p { 
+margin-top: 0; 
+margin-bottom: 0; 
+}
+```
+
+2. Then apply more precise margins.
+```
+.title { 
+margin-bottom: 16px; 
+}
+```
