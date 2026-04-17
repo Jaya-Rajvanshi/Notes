@@ -208,3 +208,26 @@ margin-bottom: 0;
 margin-bottom: 16px; 
 }
 ```
+
+### Text Element (Also called Inline Elements)
+
+● Text elements (< strong>, < u>, < span>, < a>) appear within a line of text.
+```
+<p>
+This is a <strong> text element </strong>
+</p>
+```
+Useful if we want to style only a part of the text. 
+
+●  < span >is the most generic text element (it doesn't have any default styles). 
+● We can style text elements using a class:
+
+```
+<p>
+This is a <span class = "shop-link"> text element </span>
+</p>
+
+.shop-link { 
+text-decoration: underline; 
+}
+```
