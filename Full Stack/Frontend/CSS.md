@@ -106,3 +106,71 @@ An element can have multiple classes separated by spaces. Also, elements can be 
 .subscribe-button{
 ...}
 ```
+
+## CSS Pseudo-Classes
+
+```
+.subscribe-button{      /These styles only apply when hovering over an         ....                 /element with class="subscribe-button"
+}
+
+.subscribe-button:active{      /These styles only apply when clicking on an         ....                   /element with class="subscribe-button"
+}
+```
+
+## Intermediate CSS Properties
+
+```
+.subscribe-button{
+    opacity: 0.5;                       /Sets how see-through an element is: 0.5 = 50% see-through
+    opacity: 0;                         /0 = complete see-through (invisible).
+    opacity: 1;                         /1 = not see-through (this is the default value).
+    
+    transition: <property> <duration>;   /Transition smoothly when changing styles (often used when hovering).
+    transition: background-color 1s;     /Transition background color over 1s.
+    transition: color 0.15s;             /Transition text color over 0.15 s.
+    transition: <property1> <duration1>, /Transition multiple properties  
+     <property2> <duration2>,            /by separating them with a comma.
+     ...;
+    transition: background-color 0.15s,   /Transition both background color and text color over 0.15 s.
+      color 0.15s;                       
+    box-shadow: <h-position> <v-position> <blur> <shadow>;
+    box-shadow: 3px 4px 5px black;             /Creates a shadow that's 3px to the right of the element, 4px to the bottom, with 5px of blur and color of black.
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       /Creates a shadow that's 3px to the right, 4px to the bottom, with no blur, and a very faint black color.
+ }
+```
+
+## Chrome DevTools
+
+Lets us view (and modify) the HTML and CSS of a website directly in the browser. To open the DevTools: right-click > Inspect.
+
+## CSS Box Model
+
+● Determines how much space an element takes up. 
+● Determines how far away elements are from each other.
+
+
+```
+.join-button { 
+margin-right: 10px;      /Add 10px of space on the outside of the element.
+margin-left: 10px;    
+margin-top: 10px;
+margin-bottom: 10px;     /Normal margin pushes things away from an element
+margin-right: -20px;     /Negative margin pulls things towards an element 
+
+margin: 10px;            /Shorthand for adding 10px of margin on all sides. 
+margin: 10px 20px;       /Add 10px of margin top & bottom and 20px left & right margin: <top> <left & right> <bottom>; 
+margin: <top> <right> <bottom> <left>;
+
+padding-right: 10px;      /Add 10px of space on the inside of the element. 
+padding-left: 10px; 
+padding-top: 10px; 
+padding-bottom: 10px; 
+padding-right: -20px;     /Negative padding has no effect.
+
+border-width: 1px;                /Sets the border width. 
+border-style: solid;              /Sets the border style (to a solid color). 
+border-color: red;                /Sets the border color.
+
+border: <width> <style> <color>;  /Shorthand for the above 3 properties.
+border: 1px solid red; 
+```
