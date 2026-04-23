@@ -272,3 +272,22 @@ href="fold1/fold2/styles.css" /Go into fold1, go into fold2, look for styles.css
 
 ```
 
+## Images
+
+```
+<img src="image.png">             /Loads an image image.png beside the HTML file
+<img src="pics/image.png">        /Loads image.png in the pics folder.
+<img class="image" src="pics/image.png">
+
+.image {
+ width: 300px;              /Resizes the image to a width of 300px. Height will also resize to keep the image's dimensions.
+ height: 300px;             /If both width and height are set, the image may stretch.
+ object-fit: cover;         /Enlarges the image to cover the entire width * height area without stretching or distorting.
+ object-fit: contain;       /Shrinks the image so that it's contained in the width * height area.
+ object-position: left;     /Determines where the image is positioned in the width * height area.
+ object-position: right;     
+ object-position: top;
+ object-position: bottom;
+}
+
+```
