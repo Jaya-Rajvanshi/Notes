@@ -243,3 +243,32 @@ text-decoration: underline;
 </body>
 </head>
 </html>
+
+```
+
+### Elements in the 'head' section
+
+```
+<head>
+<title> Title in the tab </title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.gstatic.comcss2?family=Roboto:wght@400;500&display=sw">
+```
+Loads a font from Google onto the page. 1) Search "google fonts" in Google. 2) Pick the font that you like. 3) Copy the code that Google provides into < head >
+To load a CSS file into the page -
+
+```
+<link rel="stylesheet" href="styles.css"> </head>
+```
+
+### File Paths
+
+```
+href="styles.css"           /Looks for a file called styles.css beside the HTML file.
+href="fold1/styles.css"     /Looks for a folder called fold1 beside the HTML file, then goes into the folder and looks for styles.css
+href="fold1/fold2/styles.css" /Go into fold1, go into fold2, look for styles.css
+
+```
+
