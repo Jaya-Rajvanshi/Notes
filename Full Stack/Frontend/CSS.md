@@ -231,3 +231,15 @@ This is a <span class = "shop-link"> text element </span>
 text-decoration: underline; 
 }
 ```
+
+## The HTML Structure
+
+```
+<!DOCTYPE html>  /Tells the browser to use a modern version of HTML.
+<html>
+<head>           /contains everything that's not visible like the title and description (a.k.a. metadata) as well as links to fonts and CSS stylesheets.
+<body>
+...              /contains everything that's visible like buttons, text, images, etc
+</body>
+</head>
+</html>
